@@ -1,7 +1,7 @@
 'use strict';
 
-const TreeNode = module.exports = function(value) {
-  this.value = value;
+const TreeNode = module.exports = function(val) {
+  this.value = val;
   this.children = [];
 };
 
@@ -18,9 +18,9 @@ TreeNode.prototype.appendChild = function(node) {
 };
 
 
-treeRoot = new TreeNode(3);
-treeRoot.appendChild(new TreeNode(40));
-treeRoot.children[0].appendChild(new TreeNode(7));
+// treeRoot = new TreeNode(3);
+// treeRoot.appendChild(new TreeNode(40));
+// treeRoot.children[0].appendChild(new TreeNode(7));
 
 //Breadth first traversal -- O(n)
 TreeNode.prototype.prettyPrint = function() {
@@ -40,16 +40,16 @@ TreeNode.prototype.prettyPrint = function() {
   return result;
 };
 
-Tree.prototype.add = function(val, parentVal) { //default parentVal=null to begin
+Tree.prototype.add = function(val, parentVal) { 
   let newNode = new TreeNode(val);
   
-  if(!this.root) {
+  if(!this.root && !parentVal) {
     this.root = newNode;
     return;
   }
   
   this.preOrder(node => {
-    if(node.val === parentVal) {
+    if(node.value === parentVal) {
       node.children.push(newNode);
       return;
     }
@@ -66,25 +66,23 @@ Tree.prototype.preOrder = function(cb) {
 };
 
 Tree.prototype.prune = function(val) {
-  if(!val) return new Error('must pass val');
+  if(!val) return new Error('Please enter a value');
   if(!root) return;
   let current = this.root;
   let parent, index;
   
   this.preOrder(node => {
     current.children.forEach((child, idx) => {
-      if(child.val === val) {
+      if(child.value === val) {
         index = idx;
         parent = current;
+        parent.children.splice(index, 1);
         return;
       }
-      
+      console.log('current', current);
       current = node;
     });
-  });
-  if(!parent) return new Error('whatever');
-  
-  parent.children.splice(index, 1);
+  });  
 };
 
-Tree.prototype.remove = function(val) {};
+// Tree.prototype.remove = function(val) {};
