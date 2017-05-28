@@ -149,3 +149,8 @@ The prune method can now be used to remove a portion of the tree and all its chi
 ```
 { root: { value: 5, children: [] } }
 ```
+
+## Testing
+To run the tests on the method, type `npm i` in the command line to install chai and mocha as dependencies. Then, type `npm run test` in the command line to run all of the tests. 
+
+There are currently #### tests passing which contain a total of ### assertions.
