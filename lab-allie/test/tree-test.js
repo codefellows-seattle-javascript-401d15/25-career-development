@@ -28,26 +28,50 @@ describe('Testing the Tree methods', function() {
     
     it('should not contain any children before the method is applied', done => {
       expect(tree).to.not.have.valueOf(4);
-      console.log('tree', tree);
       done();
     });
     
     it('should add the node with a specific value after the method is applied', done => {
       tree.add(4, null);
-      console.log('tree', tree);
       expect(tree).to.have.valueOf(4);
       done();
     });
     
     it('should be able to add additional nodes the a child of the root', done => {
       tree.add(6, 4);
-      console.log('tree', tree);
       expect(tree).to.have.valueOf(6);
       done();
     });
     
   });
   
+  describe('Testing the prune method', () => {
+    it('should contain the node prior to pruning', done => {
+      tree.add(1, null);
+      tree.add(2, 1);
+      tree.add(3, 1);
+      tree.add(4, 3);
+      tree.add(5, 3);
+      tree.add(6, 5);
+      tree.add(7, 5);
+      tree.add(8, 5);
+      
+      expect(tree).to.have.valueOf(1);
+      expect(tree).to.have.valueOf(2);
+      expect(tree).to.have.valueOf(3);
+      expect(tree).to.have.valueOf(4);
+      expect(tree).to.have.valueOf(5);
+      expect(tree).to.have.valueOf(6);
+      expect(tree).to.have.valueOf(7);
+      expect(tree).to.have.valueOf(8);
+      
+      tree.prune(5);
+      expect(tree).to.not.have.valueOf(6);
+      expect(tree).to.not.have.valueOf(7);
+      expect(tree).to.not.have.valueOf(8);
+      done();
+    });
+  });
   
   describe('Testing the appendChild and prettyPrint node methods', () => {
     
@@ -70,7 +94,6 @@ describe('Testing the Tree methods', function() {
       
       treeroot.prettyPrint();
       expect(treeroot.prettyPrint()).to.deep.contain('2 40 15 5 92');
-      console.log('treeroot', treeroot);
       done();
     });
   });
