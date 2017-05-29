@@ -1,0 +1,32 @@
+{
+  "name": "lab-davidw",
+  "version": "0.1.0",
+  "description": "lab 25 - Tree Data Struture",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidGWheeler/25-career-development.git"
+  },
+  "keywords": [
+    "data-structures",
+    "html",
+    "tree",
+    "DOM-traversal"
+  ],
+  "author": "DavidGWheeler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidGWheeler/25-career-development/issues"
+  },
+  "homepage": "https://github.com/DavidGWheeler/25-career-development#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
