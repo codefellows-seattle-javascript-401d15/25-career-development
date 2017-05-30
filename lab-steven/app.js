@@ -1,16 +1,12 @@
 'use strict';
 
-const Promise = require('bluebird');
-const fs = Promise.promisify(require('fs'));
-
-
+const htmlParse = require('./lib/html-parser');
 const Tree = require('./lib/tree.js');
 
 let dom = new Tree();
 
-function createDOM(path, callback){
-  fs.readfile(path, callback).toString()
-  .then(buf => {
-    buf.split('')
-  })
-}
+module.exports = function createDOM(path){
+  htmlParse(path);
+  //iterate through array and create nodes, add them to tree?
+  
+};

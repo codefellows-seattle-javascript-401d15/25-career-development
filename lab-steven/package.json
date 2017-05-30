@@ -16,5 +16,8 @@
     "parser"
   ],
   "author": "CF Steven Johnson",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0"
+  }
 }
