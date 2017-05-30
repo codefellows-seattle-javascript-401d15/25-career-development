@@ -6,10 +6,7 @@ const Tree = module.exports = function() {
   this.root = null;
 };
 
-// const TreeNode = function(val) {
-//   this.value = val;
-//   this.children = [];
-// };
+const fs = require('fs');
 
 // O(n)
 Tree.prototype.add = function(val, parentVal) { 
@@ -94,3 +91,39 @@ TreeNode.prototype.prettyPrint = function() {
   console.log('result', result);
   return result;
 };
+
+fs.readFile('../assets/minimal.html', 'utf-8', function read(err, data) {
+  if (err) throw err;
+
+  let result = data.split('\n');
+  console.log('result', result);
+  
+  let filetree = new Tree();
+  filetree.add(result[1], null);
+  filetree.add(result[2], result[1]);
+  filetree.add(result[5], result[1]);
+  
+  filetree.add(result[3], result[2]);
+  filetree.add(result[6], result[5]);
+  filetree.add(result[17], result[5]);
+  filetree.add(result[23], result[5]);
+
+  filetree.add(result[7], result[6]);
+  filetree.add(result[8], result[6]);
+
+  filetree.add(result[9], result[8]);
+  
+  filetree.add(result[10], result[9]);
+  filetree.add(result[11], result[9]);
+  filetree.add(result[12], result[9]);
+  filetree.add(result[13], result[9]);
+
+  filetree.add(result[18], result[17]);
+  filetree.add(result[19], result[18]);
+  filetree.add(result[20], result[18]);
+
+  filetree.add(result[24], result[23]);
+
+  console.log(filetree);
+  return filetree;
+});
