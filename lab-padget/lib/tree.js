@@ -1,5 +1,7 @@
 'use strict';
 
+//const fs = require('fs');
+
 let Node = function(val) {
   this.val = val;
   this.children = [];
