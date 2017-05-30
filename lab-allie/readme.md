@@ -1,3 +1,6 @@
+# Tree Data Structure - Lab 25
+
+### Instantiating a new Tree - Method 1
 The user can open `node` in the command line and make a sample tree by entering the following lines of code:
 
 ```
@@ -104,9 +107,9 @@ The node with a value of 9 appears as:
   [ { value: 17, children: [] } ] }
   ```
   
-  The prettyPrint method is used to print out the node values in breadth-first traversal order. The method should be included in node (see `tree.js` file) and then the method can be called by entering  `treeroot.prettyPrint()`. The function will return a string that appears as `'2 40 12 9 5 8 17 '` for this example.
+The prettyPrint method is used to print out the node values in breadth-first traversal order. The method should be included in node (see `tree.js` file) and then the method can be called by entering  `treeroot.prettyPrint()`. The function will return a string that appears as `'2 40 12 9 5 8 17 '` for this example.
 
-
+### Instantiating a new Tree - Method 2
 The tree can also be instantiated and nodes can be added using the `.add` prototype method. To do so, type the following into the terminal while running node: 
 `tree.add(5, null)`
 
@@ -150,7 +153,7 @@ The prune method can now be used to remove a portion of the tree and all its chi
 { root: { value: 5, children: [] } }
 ```
 
-## Testing
+### Testing
 To run the tests on the method, type `npm i` in the command line to install chai and mocha as dependencies. Then, type `npm run test` in the command line to run all of the tests. 
 
-There are currently #### tests passing which contain a total of ### assertions.
+There are currently 7 tests passing which contain a total of 25 assertions.

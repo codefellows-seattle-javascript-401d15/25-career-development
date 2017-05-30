@@ -97,5 +97,4 @@ describe('Testing the Tree methods', function() {
       done();
     });
   });
-  
 });
