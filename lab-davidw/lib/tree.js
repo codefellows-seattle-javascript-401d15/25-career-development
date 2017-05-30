@@ -2,8 +2,11 @@
 
 const fs = require('fs');
 
-let Node = module.exports = function(val) {
-  this.val = val;
+let Node = module.exports = function(eleName, textContent) {
+  this.val = {
+    eleName: eleName,
+    textContent: textContent || '',
+  };
   this.children = [];
 };
 
@@ -52,7 +55,7 @@ Tree.prototype.preOrder = function(cb) {
   }
 };
 
-Tree.prototype.add = function(val, parentVal) {
+Tree.prototype.add = function(val, parentVal, textContent) {
   let newNode = new Node(val);
 
   if(!this.root) {

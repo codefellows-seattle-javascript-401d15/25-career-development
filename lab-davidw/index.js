@@ -1,7 +1,16 @@
 'use strict';
-
-const Tree = require('./lib/tree.js');
 const fs = require('fs');
-let newTree = new Tree(root);
 
-this.dataToBuf('./assets/minimal.html', utf8, cb);
+let stack = [];
+let newBuffer = new Buffer;
+
+
+module.exports.makeBuff = function(target, encoding=utf-8) {
+  'target a file path, take the file at the target location and, using fs.js create a buffer out of the document.';
+  return buff;
+};
+
+module.exports.parseToTree = function(buff, parentVal) {
+  'read the buffer and return a tree!  Seems simple, no?';
+  'use tree methods, like prettyPrint, preOrder and add, to accomplish this?';
+};
