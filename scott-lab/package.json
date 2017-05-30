@@ -1,0 +1,22 @@
+{
+  "name": "25-career-development",
+  "version": "1.0.0",
+  "description": "![cf](http://i.imgur.com/7v5ASc8.png) lab 25 - Tree Data Structure ====",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScottBrenden/25-career-development.git"
+  },
+  "author": "scott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScottBrenden/25-career-development/issues"
+  },
+  "homepage": "https://github.com/ScottBrenden/25-career-development#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
