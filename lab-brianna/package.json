@@ -1,7 +1,7 @@
 {
   "name": "lab-brianna",
   "version": "1.0.0",
-  "description": "One Paragraph of project description goes here",
+  "description": "This is a lab assignment for Code Fellow's Full-Stack JS course",
   "main": "index.js",
   "directories": {
     "lib": "lib",
