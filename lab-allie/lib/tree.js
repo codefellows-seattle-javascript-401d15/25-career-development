@@ -95,7 +95,7 @@ TreeNode.prototype.prettyPrint = function() {
 fs.readFile('../assets/minimal.html', 'utf-8', function read(err, data) {
   if (err) throw err;
 
-  let result = data.split('\n');
+  let result = data.split('\n').replace(' ', '');
   console.log('result', result);
   
   let filetree = new Tree();
@@ -126,4 +126,13 @@ fs.readFile('../assets/minimal.html', 'utf-8', function read(err, data) {
 
   console.log(filetree);
   return filetree;
+});
+
+const fs = require('fs');
+
+fs.readFile('../assets/minimal.html', 'utf-8', function read(err, data) {
+  if (err) throw err;
+
+  let result = data.split('\n');
+  console.log('result', result);
 });
