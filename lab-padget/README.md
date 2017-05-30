@@ -3,6 +3,8 @@
 ## Description
 For this lab we worked with a tree data structure. The goal was to use the node fs module to read an HTML document into a buffer. To parse the buffer and use the root <html> element, subsequent HTML tags, and their text content to build a tree data structure.
 
+The big O of an array is O(n). The big O for a binary search tree is O(log n) for insert and delete.
+
 For more information see:
 * [Class 25](https://github.com/codefellows/seattle-javascript-401d15/tree/master/class-25-career-development)
 * [Lab 25](https://github.com/codefellows-seattle-javascript-401d15/25-career-development)
@@ -109,6 +111,9 @@ karma start
 * [Testing Controllers](http://www.bradoncode.com/blog/2015/06/05/ngmock-fundamentals-testing-controllers/)
 * [End to End Testing](https://docs.angularjs.org/guide/e2e-testing)
 * [Testing with Protractor](http://www.ng-newsletter.com/posts/practical-protractor.html)
+* [Big O Notation](https://simple.wikipedia.org/wiki/Big_O_notation)
+* [Big O Complexity](http://bigocheatsheet.com)
+* [Binary Search Tree](https://en.wikipedia.org/wiki/Binary_search_tree)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/mmpadget/25-career-development/blob/lab-25/lab-padget/LICENSE) file for details.

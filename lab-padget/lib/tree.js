@@ -1,11 +1,23 @@
 'use strict';
 
-//const fs = require('fs');
+// const fs = require('fs');
+
+// The big O of an array is O(n). The big O for a binary search tree is O(log n) for insert and delete.
 
 let Node = function(val) {
   this.val = val;
   this.children = [];
 };
+
+// Tree {
+//   root: Node {
+//     value: {
+//       eleName: 'xxx',
+//       textContent: 'yyy' (can be empty string??)
+//     },
+//     children: [{Node}, {Node}, ...]
+//   }
+// }
 
 let Tree = module.exports = function() {
   this.root = null;
