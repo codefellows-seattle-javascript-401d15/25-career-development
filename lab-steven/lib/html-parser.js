@@ -1,16 +1,16 @@
 'use strict';
 
 const Promise = require('bluebird');
-const fs = Promise.promisify(require('fs'));
+const fs = Promise.promisifyAll(require('fs'));
 
 //parse html string into values ready to be input into nodes?
 //input: html file path
 //output: array ready for node creation? e.g. [<html>, <head>, <title>, titletext, </title>, </head>, ...]
 module.exports = function(path){
   let htmlArr = [];
-  fs.readfile(path).toString()
+  fs.readFile(path).toString()
   .then(buf => {
-    
+
     return buf.split(''); //is array best route to go?
   })
   .then(arr => {
