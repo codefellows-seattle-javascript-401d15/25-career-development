@@ -1,11 +1,11 @@
 # Lab 25:
 
 ## Description
-For this lab...
+For this lab we worked with a tree data structure. The goal was to use the node fs module to read an HTML document into a buffer. To parse the buffer and use the root <html> element, subsequent HTML tags, and their text content to build a tree data structure.
 
 For more information see:
-* [Class 25]()
-* [Lab 25]()
+* [Class 25](https://github.com/codefellows/seattle-javascript-401d15/tree/master/class-25-career-development)
+* [Lab 25](https://github.com/codefellows-seattle-javascript-401d15/25-career-development)
 
 ## Version
 * 0.1.0
@@ -30,13 +30,11 @@ Initializing package.json
 ```
 npm init
 
-npm install -S angular babel-core babel-loader babel-preset-es2015 css-loader extract-text-webpack-plugin html-webpack-plugin node-sass sass-loader webpack style-loader
+npm install -S angular babel-core babel-loader babel-preset-es2015 extract-text-webpack-plugin html-webpack-plugin
 
 npm i -D angular-mocks jasmine jasmine-core karma karma-chrome-launcher karma-jasmine karma-webpack webpack-dev-server
 
 npm install karma-mocha-reporter --save-dev
-
-karma -init
 ```
 
 Add the following to package.json:
@@ -45,15 +43,6 @@ Add the following to package.json:
   "test": "karma start",
   "build": "webpack",
   "watch": "webpack-dev-server --inline --hot"
-}
-
-or
-
-"scripts": {
-  "test-watch": "karma start",
-  "build": "webpack",
-  "watch": "webpack-dev-server --inline --hot",
-  "test": "karma start --single-run"
 }
 ```
 
@@ -66,13 +55,8 @@ The result of installation above.
   "babel-core": "^6.24.1",
   "babel-loader": "^7.0.0",
   "babel-preset-es2015": "^6.24.1",
-  "css-loader": "^0.28.2",
   "extract-text-webpack-plugin": "^2.1.0",
-  "html-webpack-plugin": "^2.28.0",
-  "node-sass": "^4.5.3",
-  "sass-loader": "^6.0.5",
-  "style-loader": "^0.18.1",
-  "webpack": "^2.6.1"
+  "html-webpack-plugin": "^2.28.0"
 },
 "devDependencies": {
   "angular-mocks": "^1.6.4",
@@ -81,6 +65,7 @@ The result of installation above.
   "karma": "^1.7.0",
   "karma-chrome-launcher": "^2.1.1",
   "karma-jasmine": "^1.1.0",
+  "karma-mocha-reporter": "^2.2.3",
   "karma-webpack": "^2.0.3",
   "webpack-dev-server": "^2.4.5"
 }
@@ -126,7 +111,7 @@ karma start
 * [Testing with Protractor](http://www.ng-newsletter.com/posts/practical-protractor.html)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/mmpadget/) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/mmpadget/25-career-development/blob/lab-25/lab-padget/LICENSE) file for details.
 
 ## Acknowledgments
 * Code Fellows
