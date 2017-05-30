@@ -39,7 +39,7 @@ Tree.prototype.prune = function(value){
   this.traversal(node => {
     current.children.forEach((child, idx) => {
       if(child.value === value){
-        index = index
+        index = idx
         parent = current
         return
       }
