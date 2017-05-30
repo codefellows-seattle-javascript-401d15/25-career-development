@@ -1,0 +1,30 @@
+{
+  "name": "lab-ben",
+  "version": "1.0.0",
+  "description": "HTML Tree parser",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mohca"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BAyzenberg/25-career-development.git"
+  },
+  "keywords": [
+    "HTML",
+    "Tree",
+    "Node"
+  ],
+  "author": "Ben Ayzenberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BAyzenberg/25-career-development/issues"
+  },
+  "homepage": "https://github.com/BAyzenberg/25-career-development#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0"
+  }
+}
