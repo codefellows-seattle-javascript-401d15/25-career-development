@@ -1,0 +1,33 @@
+{
+  "name": "lab-brianna",
+  "version": "1.0.0",
+  "description": "This is a lab assignment for data structures and algorithms",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brisourceful/lab-10-career-development.git"
+  },
+  "keywords": [
+    "node",
+    "mocha",
+    "chai",
+    "data",
+    "algorithms"
+  ],
+  "author": "Brianna Burrows",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brisourceful/lab-10-career-development/issues"
+  },
+  "homepage": "https://github.com/brisourceful/lab-10-career-development#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  }
+}
