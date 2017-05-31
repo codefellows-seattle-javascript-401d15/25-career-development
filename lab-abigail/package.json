@@ -17,6 +17,7 @@
     "mocha": "^3.4.2"
   },
   "dependencies": {
+    "bluebird": "^3.5.0",
     "fs": "0.0.1-security"
   }
 }

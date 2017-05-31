@@ -1,7 +1,5 @@
 'use strict';
 
-const fs = require('./fs.js');
-
 const TreeNode = module.exports = function(value) {
   this.value = value;
   this.children = [];
@@ -11,24 +9,24 @@ const Tree = module.exports = function() {
   this.root = null;
 };
 
-Tree.buildTree = function(treeData) { // from fs readFile
-  this.root = '<html';
-  let stack = new Stack;
-  stack.unshift(newElement);
-  if(!'</html>') {
-    if(newElement) {
-      // stack.unshift(newElement);
-      // create stack that adds element and removes element at closing tag
-      // elements above are children
-      // siblings exist on same levels
-      // conditionals to handle <meta> tags
-
-    } if (closureOfNewElement) {
-      stack.pop();
-    }
-  }
-  return treeObject;
-};
+// Tree.buildTree = function(treeData) { // from fs readFile
+//   this.root = '<html';
+//   let stack = new Stack;
+//   stack.unshift(newElement);
+//   if(!'</html>') {
+//     if(newElement) {
+//       // stack.unshift(newElement);
+//       // create stack that adds element and removes element at closing tag
+//       // elements above are children
+//       // siblings exist on same levels
+//       // conditionals to handle <meta> tags
+//
+//     } if (closureOfNewElement) {
+//       stack.pop();
+//     }
+//   }
+//   return treeObject;
+// };
 
 
 // Prototypes
