@@ -1,0 +1,29 @@
+{
+  "name": "lab-teddy",
+  "version": "1.0.0",
+  "description": "lab-25",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tedsters/25-career-development.git"
+  },
+  "keywords": [
+    "DSA"
+  ],
+  "author": "David Teddy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tedsters/25-career-development/issues"
+  },
+  "homepage": "https://github.com/tedsters/25-career-development#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0"
+  }
+}
