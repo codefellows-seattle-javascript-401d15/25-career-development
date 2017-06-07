@@ -1,0 +1,30 @@
+{
+  "name": "lab-25-lindsay",
+  "version": "1.0.0",
+  "description": "lab-25-dsa",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "mocha": "^3.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindsgil/25-career-development.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lindsgil/25-career-development/issues"
+  },
+  "homepage": "https://github.com/lindsgil/25-career-development#readme"
+}
