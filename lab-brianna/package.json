@@ -1,0 +1,21 @@
+{
+  "name": "lab-brianna",
+  "version": "1.0.0",
+  "description": "This is a lab assignment for Code Fellow's Full-Stack JS course",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
