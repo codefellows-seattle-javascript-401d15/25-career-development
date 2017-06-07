@@ -1,0 +1,23 @@
+{
+  "name": "lab-abigail",
+  "version": "1.0.0",
+  "description": "in your README, write documentation for you data structures your documentation should includes code block usage examples provide instructions for: installing and using your data structure running any command line interface accessing each method running your tests",
+  "main": "index.js",
+  "directories": {
+    "test": "mocha"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.4.2"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "fs": "0.0.1-security"
+  }
+}
