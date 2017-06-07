@@ -1,0 +1,24 @@
+{
+  "name": "caleb-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tree.js",
+  "scripts": {
+    "test": "karma start --single-run"
+  },
+  "author": "watman",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "fs": "0.0.1-security",
+    "jasmine": "^2.6.0",
+    "karma": "^1.7.0",
+    "karma-jasmine": "^1.1.0",
+    "superagent": "^3.5.2"
+  },
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.4.2"
+  }
+}
