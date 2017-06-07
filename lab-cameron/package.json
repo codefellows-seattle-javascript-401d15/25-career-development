@@ -1,0 +1,27 @@
+{
+  "name": "tree-data-structure",
+  "version": "0.0.1",
+  "description": "lab 25: traversing through tree data structures",
+  "main": "entry.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node ./entry.js",
+    "watch": "nodemon ./entry.js",
+    "test": "mocha"
+  },
+  "keywords": [
+    "data",
+    "structures",
+    "tree",
+    "node"
+  ],
+  "author": "Cameron Bacon",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "debug": "^2.6.8",
+    "mocha": "^3.4.2"
+  }
+}
