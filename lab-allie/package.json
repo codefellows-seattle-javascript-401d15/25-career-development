@@ -1,0 +1,19 @@
+{
+  "name": "lab-allie",
+  "version": "1.0.0",
+  "description": "Tree Data Structure Lab (#25)",
+  "main": "tree.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Allie Grampa",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.0.0",
+    "jsdom": "^11.0.0",
+    "mocha": "^3.4.2"
+  }
+}
