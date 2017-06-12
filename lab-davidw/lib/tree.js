@@ -125,3 +125,16 @@ Tree.prototype.remove = function(val) {
   parent.children.forEach.push(child);
   parent.chidren[val].slice;
 };
+
+Tree.prototype.countNodes = function() {
+  let count = 0;
+  this.preOrder(node => {
+    if(!node) return;
+    count ++;
+  });
+  return count;
+};
+
+Tree.prototype.countEdges = function() {
+  return this.countNodes() -1;
+};

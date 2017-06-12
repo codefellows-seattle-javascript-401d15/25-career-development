@@ -17,10 +17,10 @@ To run the mocha chai tests you can run the following script:
 
 ### Methods I added:
 - Tree.prototype.dataToBuf(target)
-    -  Takes an arguemnt of the file to target.
+    -  Takes an argument of the file to target.
     -  Returns a buffer of the data contained in the target file.
 
 ### Methods I modified:
 - Tree.prototype.add(data, toData, cb)
     - takes an argument of data, toBuf and a callback.
-    - returns a data tree, where the root is the document (html) and subsequent HTML tags, and their text content, will constitute the remainder of the tree.
+    - returns a data tree, where the root is the document (html) element and subsequent HTML tags, and their text content, will constitute the remainder of the tree.
