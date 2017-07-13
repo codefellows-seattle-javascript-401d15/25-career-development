@@ -1,0 +1,19 @@
+{
+  "name": "lab-maria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "entry.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node app.js"
+  },
+  "author": "maria leereed",
+  "license": "MIT",
+  "dependencies": {
+    "archy": "^1.0.0",
+    "bluebird": "^3.5.0"
+  }
+}
