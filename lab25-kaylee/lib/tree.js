@@ -1,13 +1,10 @@
 'use strict';
 
-let Node = function(val) {
-  this.val = val;
-  this.children = [];
-};
-
 let Tree = module.exports = function() {
   this.root = null;
 };
+
+let Node = require('./node.js');
 
 Tree.prototype.preorder = function() {
   _walk(this.root);
